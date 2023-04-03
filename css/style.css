@@ -1,0 +1,121 @@
+/*Reset CSS para tirar todas as margens dos elementos*/
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+/*Estilização do HEADER - Cabeçalho */
+.cabecalho{
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right:20px;
+}
+
+.cabecalho > img{
+    height: 60px;
+}
+.menu{
+    display: flex;
+}
+.menu > li{
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.menu > li > a{
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px black;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-weight: 600px;
+}
+.pizza{
+    background-image: url(../img/pizza.jpg);
+    height: 400px;
+    background-position: top center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 3px 10px darkgreen;
+}
+.pizza > h1{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    margin-bottom: 30px;
+}
+.botao-vazado{
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.5);
+}
+.botao-vazado:hover{
+    background-color: white;
+    color: black;
+}
+h2{
+    text-align: center;
+    color: green;
+    margin: 10px;
+}
+hr{
+background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,0.16299019607843135) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,0.10696778711484589) 100%);
+margin: 0 auto;
+margin-top: 5px;
+border: 0;
+width: 600px;
+height: 3px;
+}
+p{
+    text-align: center;
+}
+.sabores{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    
+}
+.sabor{
+    background-color: green;
+    margin: 4px;
+    border-radius: 7px;
+    color: white;
+    
+}
+.preço{
+    background-color: yellow;
+    margin: 8px;
+    border-radius: 5px;
+    color: black;
+}
+img {
+    border-radius: 10px;
+}
+.promocoes{
+    display: flex;
+    overflow: scroll;
+}
+.rodape{
+    background-color: red;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: space-between;
+    display: flex;
+
+}
+h4{
+    color: white;
+}
